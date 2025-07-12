@@ -9,11 +9,11 @@ Ce projet a pour but de détecter et afficher les erreurs critiques enregistrée
 **Fichier :** `logs-linux.sh`
 
 ### Script :
-```bash
+
 #!/bin/bash
 echo "========== ERREURS CRITIQUES (Linux) =========="
 journalctl -p 3 -xb | grep "ERROR" | tail -n 10
-```bash
+
 
 #Objectif :
 Afficher les 10 dernières erreurs critiques du journal système (journalctl) en filtrant uniquement celles qui contiennent le mot ERROR.
